@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FCC:Random Quote Machine</title>
+    <style>
+      html,body,div{
+        margin: 0;
+        padding: 0;
+      }
+
+      .wrapper {
+        
+        margin:auto;
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        background-color: aquamarine;
+        transition: background-color 2s;
+        background-size: cover;
+      }
+
+      #quote-box {
+
+        transform: translate(-300px, -100px);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 200px;
+        width: 600px;
+        border: 1px solid white;
+        border-radius: 20px;
+        background-color: white;
+        background-size: cover;
+      }
+
+      #text {
+        text-align: center;
+      }
+
+      #author {
+        position: relative;
+        margin-left:75%;
+        top: 5%;
+      }
+
+      #button {
+        position: relative;
+        top: 10%;
+        
+        }
+      #b{
+
+        margin-left:80%;
+      }
+
+
+
+       @media  (max-width:1440px)
+      {
+
+        #quote-box {
+      
+    
+      position: absolute;
+      padding: 5px;
+      margin-left: 145px;
+      width: 300px;
+      height: 220px;
+      border: 1px solid white;
+      border-radius: 20px;
+      background-color: white;
+      background-size: cover;
+      
+      }
+
+
+#button
+{
+  padding: 5px;
+}
+
+#b{
+  padding: 4px;
+  border-radius: 25px;
+  border:1px solid grey;
+  background-color: transparent;
+  color:black;
+  outline:none;
+  width: 56px;
+}
+
+
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="wrapper" id="wrap">
+      <div id="quote-box">
+        <div id="text">
+          <h3 id="text-content">A person who never made a mistake never tried anything new.</h2>
+        </div>
+        <div id="author">
+           Albert Einstein
+        </div>
+        <div id="button">
+          <button id="b" onclick="getNewQuote()">
+            New Quote
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
